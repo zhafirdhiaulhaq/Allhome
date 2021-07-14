@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4a361;
+    padding: 0 100px;
+}
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo::after{
+    content: 'home';
+    color: #333;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+header .navigation li{
+    display: flex;
+    position: relative;
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li img{
+    width: 30px;
+    filter: invert(1);
+}
+.content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 800px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+.content .textBox h2{
+    line-height: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    font-size: 3em;
+}
+.content .textBox p{
+    margin: 20px 0;
+    color: #333;
+}
+.content .textBox .buttons{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+.content .textBox .buttons a{
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid #fff;
+}
+.content .textBox .buttons a.first{
+    color: #333;
+    background: #fff;
+}
+.content .textBox .buttons a.first:hover{
+    color: #fff;
+    background: none;
+}
+.content .textBox .buttons a.second{
+    color: #fff;
+    margin-left: 30px;
+}
+.content .textBox .buttons a.second:hover{
+    color: #333;
+    background: #fff;
+}
+.content .imgBox{
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.content .imgBox::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateX(60px);
+}
+.content .imgBox img{
+    transform: scaleX(-1);
+    width: 500px;
+    pointer-events: none;
+}
